@@ -93,7 +93,7 @@ public class Parent extends javax.swing.JFrame {
     private void menuItemSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemSalirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_menuItemSalirActionPerformed
-
+    
     private void menuItemHijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemHijoActionPerformed
        ///////////////CREAR UN FORMULARIO HIJO/////////////////////////
       if(openedChild==0){
@@ -102,6 +102,7 @@ public class Parent extends javax.swing.JFrame {
         h.setVisible(true);
         this.openedChild++;
        }
+      
     }//GEN-LAST:event_menuItemHijoActionPerformed
 
     /**
