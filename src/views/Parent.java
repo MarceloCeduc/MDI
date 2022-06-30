@@ -15,8 +15,10 @@ public class Parent extends javax.swing.JFrame {
      * Creates new form Parent
      */
     int openedChild = 0;
+    Child h;
     public Parent() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -96,13 +98,13 @@ public class Parent extends javax.swing.JFrame {
     
     private void menuItemHijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemHijoActionPerformed
        ///////////////CREAR UN FORMULARIO HIJO/////////////////////////
-      if(openedChild==0){
-        Child h = new Child();
+      
+      if(openedChild==0 || h.isClosed()){
+        h = new Child();
         this.panel.add(h);
         h.setVisible(true);
-        this.openedChild++;
-       }
-      
+        this.openedChild++;       
+       }     
     }//GEN-LAST:event_menuItemHijoActionPerformed
 
     /**

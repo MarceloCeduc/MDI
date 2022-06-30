@@ -16,6 +16,7 @@ public class Child extends javax.swing.JInternalFrame {
      */
     public Child() {
         initComponents();
+
     }
 
     /**
@@ -28,6 +29,8 @@ public class Child extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         setClosable(true);
+        setIconifiable(true);
+        setTitle("Hijo");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
